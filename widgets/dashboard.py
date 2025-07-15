@@ -1,4 +1,4 @@
-from PyQt6.QtWidgets import QWidget, QVBoxLayout, QLabel, QFrame, QPushButton, QFileDialog
+from PyQt6.QtWidgets import QWidget, QVBoxLayout, QLabel, QFrame, QPushButton, QFileDialog, QMessageBox
 from PyQt6.QtGui import QPixmap, QDesktopServices
 from PyQt6.QtCore import Qt, QUrl
 import os
@@ -48,17 +48,17 @@ class DashboardTab(QWidget):
 
         btn_settings = QPushButton("⚙️ Instellingen")
         btn_settings.clicked.connect(self.open_settings_dialog)
-                card_layout.addWidget(btn_settings)
+        card_layout.addWidget(btn_settings)
 
         btn_changelog = QPushButton("📝 Bekijk changelog")
         btn_changelog.clicked.connect(self.open_changelog)
         card_layout.addWidget(btn_changelog)
 
-                # Extra info: changelog / credits
+        # Footer
         info_footer = QLabel("<div style='font-size:9pt; text-align:center; color:gray;'>"
-                              "Laatste update: 15 juli 2025<br>"
-                              "Gemaakt door <b>M. Ligtenberg</b> — met ❤️ in PyQt6"
-                              "</div>")
+                             "Laatste update: 15 juli 2025<br>"
+                             "Gemaakt door <b>M. Ligtenberg</b> — met ❤️ in PyQt6"
+                             "</div>")
         info_footer.setAlignment(Qt.AlignmentFlag.AlignCenter)
         info_footer.setTextFormat(Qt.TextFormat.RichText)
         card_layout.addWidget(info_footer)
@@ -70,12 +70,11 @@ class DashboardTab(QWidget):
     def open_plugin_folder(self):
         os.system(f'xdg-open "{os.path.abspath(os.path.join(os.path.dirname(__file__), "../plugins"))}"')
 
-        def open_changelog(self):
+    def open_changelog(self):
         changelog_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "../CHANGELOG.md"))
         if os.path.exists(changelog_path):
             os.system(f'xdg-open "{changelog_path}"')
         else:
-            from PyQt6.QtWidgets import QMessageBox
             QMessageBox.information(self, "Changelog niet gevonden", "Het changelog-bestand kon niet worden gevonden.")
 
     def open_settings_dialog(self):
