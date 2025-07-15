@@ -1,6 +1,7 @@
 from PyQt6.QtWidgets import (
     QWidget, QVBoxLayout, QLabel, QLineEdit, QTextEdit, QPushButton,
-    QMessageBox, QHBoxLayout, QComboBox, QFrame, QProgressBar, QInputDialog, QFileDialog
+    QMessageBox, QHBoxLayout, QComboBox, QFrame, QProgressBar, QInputDialog, QFileDialog,
+    QDialog, QDialogButtonBox, QCheckBox, QGroupBox, QFormLayout
 )
 from PyQt6.QtGui import QPixmap
 from PyQt6.QtCore import Qt, QThread, pyqtSignal
@@ -11,69 +12,38 @@ import shutil
 import subprocess
 import os
 import re
+import zipfile
 
 from core.settings import SettingsManager
 from .plugin_template_fallback import generate_fallback_main_py
 from .ollama_integration import is_ollama_installed, run_ollama_prompt
 
-PLUGIN_OUTPUT_DIR = Path(SettingsManager.instance().get("output_dir", "official"))
+class MetadataFields(QGroupBox):
+    def __init__(self):
+        super().__init__("Geavanceerde Metadata")
+        self.layout = QFormLayout(self)
 
-class ModelDownloader(QThread):
-    progress = pyqtSignal(str)
-    done = pyqtSignal(bool)
+        self.author_edit = QLineEdit()
+        self.version_edit = QLineEdit("1.0")
+        self.tags_edit = QLineEdit()
+        self.compat_edit = QLineEdit("Hauswerk >=1.0")
+        self.changelog_edit = QTextEdit("Gegenereerd via Plugin Wizard")
+        self.changelog_edit.setFixedHeight(60)
 
-    def __init__(self, model):
-        super().__init__()
-        self.model = model
+        self.layout.addRow("Auteur:", self.author_edit)
+        self.layout.addRow("Versie:", self.version_edit)
+        self.layout.addRow("Tags (komma's):", self.tags_edit)
+        self.layout.addRow("Compatibiliteit:", self.compat_edit)
+        self.layout.addRow("Changelog:", self.changelog_edit)
 
-    def run(self):
-        print(f"[DEBUG] Start download van model: {self.model}")
-        try:
-            proc = subprocess.Popen(
-                ["ollama", "pull", self.model],
-                stdout=subprocess.PIPE,
-                stderr=subprocess.STDOUT,
-                text=True
-            )
-            while proc.poll() is None:
-                line = proc.stdout.readline()
-                if line:
-                    print(f"[OLLAMA DL] {line.strip()}")
-                    self.progress.emit(line.strip())
-            self.done.emit(proc.returncode == 0)
-        except Exception as e:
-            print(f"[ERROR] Download exception: {e}")
-            self.progress.emit(f"❌ Fout: {e}")
-            self.done.emit(False)
-
-class ModelTestRunner(QThread):
-    progress = pyqtSignal(str)
-    def __init__(self, model, prompt):
-        super().__init__()
-        self.model = model
-        self.prompt = prompt
-
-    def run(self):
-        self.progress.emit(f"🧪 Test het model '{self.model}' met prompt: {self.prompt!r}")
-        print(f"[DEBUG] Start modeltest voor: {self.model} met prompt: {self.prompt}")
-        try:
-            result = subprocess.run(
-                ["ollama", "run", self.model],
-                input=self.prompt,
-                capture_output=True,
-                text=True,
-                timeout=30
-            )
-            if result.returncode == 0:
-                output = result.stdout.strip()
-                print("[MODEL OUTPUT]", output)
-                self.progress.emit("🧠 Reactie:\n" + output[:1000])
-            else:
-                print("[MODEL ERROR]", result.stderr.strip())
-                self.progress.emit(f"⚠️ Fout tijdens test: {result.stderr.strip()}")
-        except Exception as e:
-            print(f"[ERROR] Modeltest exception: {e}")
-            self.progress.emit(f"❌ Exception bij modeltest: {e}")
+    def get_metadata(self):
+        return {
+            "author": self.author_edit.text() or "Onbekend",
+            "version": self.version_edit.text() or "1.0",
+            "tags": [t.strip() for t in self.tags_edit.text().split(",") if t.strip()],
+            "compatibility": [self.compat_edit.text().strip()] if self.compat_edit.text().strip() else ["Hauswerk >=1.0"],
+            "changelog": self.changelog_edit.toPlainText() or "Gegenereerd via Plugin Wizard"
+        }
 
 class PluginGeneratorWidget(QWidget):
     def __init__(self):
@@ -81,6 +51,11 @@ class PluginGeneratorWidget(QWidget):
         self.setWindowTitle("AI Plugin Generator")
 
         layout = QVBoxLayout(self)
+
+        self.template_choice = QComboBox()
+        self.template_choice.addItems(["Leeg widget", "Formulier", "Beeldgenerator", "Effectpaneel"])
+        layout.addWidget(QLabel("📦 Plugin template:"))
+        layout.addWidget(self.template_choice)
 
         self.prompt_input = QTextEdit()
         self.prompt_input.setPlaceholderText("Wat moet deze plugin doen?")
@@ -93,6 +68,9 @@ class PluginGeneratorWidget(QWidget):
         layout.addWidget(QLabel("🧠 Kies AI-model (lokaal via Ollama):"))
         layout.addWidget(self.model_choice)
 
+        self.metadata_fields = MetadataFields()
+        layout.addWidget(self.metadata_fields)
+
         self.name_display = QLineEdit()
         self.name_display.setReadOnly(True)
         layout.addWidget(QLabel("💛 Pluginnaam (slug):"))
@@ -103,13 +81,15 @@ class PluginGeneratorWidget(QWidget):
         self.generate_btn.clicked.connect(self.generate_plugin)
         btn_row.addWidget(self.generate_btn)
 
-        self.install_ollama_btn = QPushButton("⬇️ Installeer Ollama")
-        self.install_ollama_btn.clicked.connect(self.install_ollama)
-        btn_row.addWidget(self.install_ollama_btn)
+        self.view_code_btn = QPushButton("👁️ Bekijk Code")
+        self.view_code_btn.clicked.connect(self.show_code_editor)
+        self.view_code_btn.setEnabled(False)
+        btn_row.addWidget(self.view_code_btn)
 
-        self.open_folder_btn = QPushButton("📂 Open pluginmap")
-        self.open_folder_btn.clicked.connect(self._open_plugin_folder)
-        btn_row.addWidget(self.open_folder_btn)
+        self.zip_btn = QPushButton("📦 Exporteer als ZIP")
+        self.zip_btn.clicked.connect(self.export_as_zip)
+        self.zip_btn.setEnabled(False)
+        btn_row.addWidget(self.zip_btn)
 
         layout.addLayout(btn_row)
 
@@ -141,55 +121,18 @@ class PluginGeneratorWidget(QWidget):
 
     def check_ollama(self):
         if is_ollama_installed():
-            self.install_ollama_btn.setVisible(False)
             self.log("✅ Ollama gevonden op dit systeem.")
         else:
-            self.install_ollama_btn.setVisible(True)
             self.log("⚠️ Ollama niet gevonden. Je kunt fallback gebruiken of installeren.")
-
-    def install_ollama(self):
-        model, ok = QInputDialog.getItem(
-            self, "Model kiezen", "Welk model wil je installeren?",
-            ["phi", "mistral", "llama2"], 0, False
-        )
-        if not ok or not model:
-            return
-        self.log(f"📦 Gekozen model: {model}")
-        self._download_model(model)
-
-    def _download_model(self, model):
-        self.progressbar.show()
-        self.downloader = ModelDownloader(model)
-        self.downloader.progress.connect(self.log)
-        self.downloader.done.connect(self._on_download_done)
-        self.log(f"⬇️ Start download van model: {model}")
-        self.downloader.start()
-
-    def _on_download_done(self, success):
-        self.progressbar.hide()
-        if success:
-            self.log("✅ Model gedownload en klaar voor gebruik!")
-            self._test_model(self.downloader.model)
-        else:
-            self.log("❌ Download mislukt.")
-
-    def _test_model(self, model):
-        prompt, ok = QInputDialog.getText(
-            self, "Test het model", "Voer een testprompt in:", text="Zeg hallo"
-        )
-        if not ok or not prompt.strip():
-            self.log("⏩ Test prompt overgeslagen.")
-            return
-        self.testrunner = ModelTestRunner(model, prompt)
-        self.testrunner.progress.connect(self.log)
-        self.testrunner.start()
 
     def generate_plugin(self):
         prompt = self.prompt_input.toPlainText().strip()
+        template = self.template_choice.currentText()
         if not prompt:
             QMessageBox.warning(self, "Fout", "Geef een beschrijving op.")
             return
 
+        full_prompt = f"Template: {template}. {prompt}"
         slug = self._generate_slug(prompt)
         if not slug:
             QMessageBox.warning(self, "Fout", "Slug kon niet worden gegenereerd.")
@@ -197,23 +140,16 @@ class PluginGeneratorWidget(QWidget):
         classname = slug.capitalize() + "Plugin"
         self.name_display.setText(slug)
 
-        plugin_dir = PLUGIN_OUTPUT_DIR / slug
+        plugin_dir = Path(SettingsManager.instance().get("output_dir", "official")) / slug
         plugin_dir.mkdir(parents=True, exist_ok=True)
 
         metadata = {
             "name": slug,
-            "version": "1.0",
-            "description": prompt,
-            "author": "Onbekend",
-            "tags": [],
-            "verified": False,
-            "rating": 0,
-            "compatibility": ["Hauswerk >=1.0"],
-            "changelog": "Gegenereerd via Plugin Wizard",
-            "preview": "preview.png",
             "entry": "main.py",
+            "preview": "preview.png",
             "class": classname
         }
+        metadata.update(self.metadata_fields.get_metadata())
 
         (plugin_dir / "metadata.json").write_text(json.dumps(metadata, indent=2))
         self.log(f"📁 metadata.json opgeslagen in {plugin_dir}")
@@ -221,11 +157,11 @@ class PluginGeneratorWidget(QWidget):
         try:
             if is_ollama_installed():
                 model = self.model_choice.currentText().split()[0]
-                code = run_ollama_prompt(model, f"Schrijf een PyQt6 QWidget class genaamd '{classname}' die dit doet: {prompt}")
+                code = run_ollama_prompt(model, f"Schrijf een PyQt6 QWidget class genaamd '{classname}' die dit doet: {full_prompt}")
                 self.log(f"🧠 gegenereerd via Ollama model: {model}")
                 self.log("--- Preview Code ---\n" + code[:300])
             else:
-                code = generate_fallback_main_py(classname, prompt)
+                code = generate_fallback_main_py(classname, full_prompt)
                 self.log("⚠️ Ollama niet beschikbaar — fallback gebruikt")
         except Exception as e:
             self.log(f"❌ Fout bij genereren: {e}")
@@ -237,6 +173,11 @@ class PluginGeneratorWidget(QWidget):
         (plugin_dir / "preview.png").write_bytes(b"\x89PNG\r\n\x1a\n")
         self.log("✅ Bestandenset gegenereerd.")
 
+        self.generated_code = code
+        self.current_plugin_dir = plugin_dir
+        self.view_code_btn.setEnabled(True)
+        self.zip_btn.setEnabled(True)
+
         preview_path = plugin_dir / "preview.png"
         if preview_path.exists():
             pixmap = QPixmap(str(preview_path)).scaled(320, 180, Qt.AspectRatioMode.KeepAspectRatio)
@@ -245,10 +186,35 @@ class PluginGeneratorWidget(QWidget):
         else:
             self.preview_label.setText("❌ Geen preview gevonden.")
 
+    def export_as_zip(self):
+        if not hasattr(self, "current_plugin_dir"):
+            return
+        zip_path = self.current_plugin_dir.with_suffix(".zip")
+        with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zipf:
+            for root, _, files in os.walk(self.current_plugin_dir):
+                for file in files:
+                    filepath = os.path.join(root, file)
+                    arcname = os.path.relpath(filepath, self.current_plugin_dir.parent)
+                    zipf.write(filepath, arcname)
+        self.log(f"📦 ZIP-bestand opgeslagen: {zip_path}")
+
+    def show_code_editor(self):
+        if not hasattr(self, "generated_code"):
+            return
+        dlg = QDialog(self)
+        dlg.setWindowTitle("Code Preview")
+        dlg.resize(700, 500)
+        layout = QVBoxLayout(dlg)
+        textedit = QTextEdit()
+        textedit.setPlainText(self.generated_code)
+        textedit.setReadOnly(True)
+        layout.addWidget(textedit)
+        btns = QDialogButtonBox(QDialogButtonBox.StandardButton.Close)
+        btns.rejected.connect(dlg.reject)
+        layout.addWidget(btns)
+        dlg.exec()
+
     def _generate_slug(self, text):
         base = "".join(c for c in text.lower() if c.isalnum() or c in " -_")
         base = re.sub(r'[^a-z0-9_-]', '', base.strip())
         return "-".join(base.split())[:20]
-
-    def _open_plugin_folder(self):
-        QFileDialog.getOpenFileName(self, "Bekijk pluginmap", str(PLUGIN_OUTPUT_DIR), "")
