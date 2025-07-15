@@ -6,37 +6,34 @@ from PyQt6.QtWidgets import (
     QVBoxLayout, QFrame, QMessageBox, QLineEdit, QComboBox
 )
 from PyQt6.QtGui import QPixmap
-from PyQt6.QtCore import Qt
+from PyQt6.QtCore import Qt, QTimer, QPoint, QUrl
+from PyQt6.QtMultimedia import QSoundEffect
 from io import BytesIO
 from zipfile import ZipFile
 from core.show_splash import show_splash
 
-# Locatie waar plugins lokaal worden opgeslagen
-PLUGIN_DIR = os.path.join(os.path.dirname(__file__), "/plugins/", "plugins")
-# URL naar de online pluginlijst op GitHub
+PLUGIN_DIR = os.path.join(os.path.dirname(__file__), "..", "plugins")
 PLUGIN_JSON_URL = "https://raw.githubusercontent.com/michligtenberg2/hauswerk-plugins/main/plugins.json"
 
 class PluginStoreGridWidget(QWidget):
-    def __init__(self):
+    def __init__(self, parent=None):
         super().__init__()
+        self.parent_window = parent
         self.setWindowTitle("Plugin Store")
-        self.all_plugins = []  # volledige pluginlijst cache
+        self.all_plugins = []
 
         layout = QVBoxLayout(self)
 
-        # Zoekveld om plugins op naam te filteren
         self.search_input = QLineEdit()
         self.search_input.setPlaceholderText("🔍 Zoek plugins...")
         self.search_input.textChanged.connect(self.filter_plugins)
         layout.addWidget(self.search_input)
 
-        # Filter op tag
         self.tag_filter = QComboBox()
         self.tag_filter.addItem("Alle tags")
         self.tag_filter.currentTextChanged.connect(self.filter_plugins)
         layout.addWidget(self.tag_filter)
 
-        # Scrollable gridlayout voor plugin kaarten
         self.scroll = QScrollArea()
         self.scroll.setWidgetResizable(True)
         self.grid_container = QWidget()
@@ -57,7 +54,6 @@ class PluginStoreGridWidget(QWidget):
             self.grid_layout.addWidget(error_label, 0, 0)
             return
 
-        # Unieke tags verzamelen voor filterdropdown
         tags = set()
         for plugin in self.all_plugins:
             tags.update(plugin.get("tags", []))
@@ -80,13 +76,11 @@ class PluginStoreGridWidget(QWidget):
         self.display_plugins(filtered)
 
     def display_plugins(self, plugins):
-        # Verwijder bestaande widgets uit grid
         for i in reversed(range(self.grid_layout.count())):
             widget = self.grid_layout.itemAt(i).widget()
             if widget:
                 widget.setParent(None)
 
-        # Voeg nieuwe plugin cards toe
         row, col = 0, 0
         for plugin in plugins:
             card = self.create_plugin_card(plugin)
@@ -108,7 +102,6 @@ class PluginStoreGridWidget(QWidget):
         """)
         layout = QVBoxLayout(frame)
 
-        # Probeer icoon/preview op te halen van GitHub
         try:
             icon_url = f"https://raw.githubusercontent.com/michligtenberg2/hauswerk-plugins/main/{plugin['path']}/{plugin['icon']}"
             icon_data = requests.get(icon_url).content
@@ -121,25 +114,21 @@ class PluginStoreGridWidget(QWidget):
         except:
             layout.addWidget(QLabel("🧩"))
 
-        # Pluginnaam
         title = QLabel(f"<b>{plugin['name']}</b>")
         title.setAlignment(Qt.AlignmentFlag.AlignCenter)
         layout.addWidget(title)
 
-        # Beschrijving
         desc = QLabel(plugin['description'])
         desc.setWordWrap(True)
         desc.setAlignment(Qt.AlignmentFlag.AlignCenter)
         layout.addWidget(desc)
 
-        # Tags onderaan
         if plugin.get("tags"):
             tags = QLabel(" ".join([f"#{tag}" for tag in plugin['tags']]))
             tags.setStyleSheet("color: #888; font-size: 9pt;")
             tags.setAlignment(Qt.AlignmentFlag.AlignCenter)
             layout.addWidget(tags)
 
-        # Installatieknop
         btn = QPushButton("➕ Installeer")
         btn.clicked.connect(lambda _, p=plugin: self.install_plugin(p))
         layout.addWidget(btn, alignment=Qt.AlignmentFlag.AlignCenter)
@@ -148,12 +137,31 @@ class PluginStoreGridWidget(QWidget):
 
     def install_plugin(self, plugin):
         try:
-            # ZIP-bestand downloaden en uitpakken
             zip_url = f"https://github.com/michligtenberg2/hauswerk-plugins/raw/main/{plugin['path']}/{plugin['zip']}"
             response = requests.get(zip_url)
             response.raise_for_status()
             with ZipFile(BytesIO(response.content)) as zip_file:
                 zip_file.extractall(os.path.join(PLUGIN_DIR, plugin['name'].lower()))
-            QMessageBox.information(self, "Installatie voltooid", f"✅ '{plugin['name']}' is geïnstalleerd.")
+
+            # 🔔 Geluid bij succes
+            sound = QSoundEffect()
+            sound.setSource(QUrl.fromLocalFile("resources/install_success.wav"))
+            sound.setVolume(0.8)
+            sound.play()
+
+            # ✅ Visuele bevestiging
+            toast = QLabel(f"✅ {plugin['name']} is geïnstalleerd!")
+            toast.setStyleSheet("background: #222; color: white; padding: 8px; border-radius: 6px;")
+            toast.setWindowFlags(Qt.WindowType.ToolTip)
+            toast.setAttribute(Qt.WidgetAttribute.WA_TransparentForMouseEvents)
+            toast.move(self.mapToGlobal(QPoint(200, 50)))
+            toast.show()
+            QTimer.singleShot(2500, toast.close)
+
+            # ↻ Reload plugins
+            main_window = self.window()
+            if hasattr(main_window, 'reload_plugins'):
+                main_window.reload_plugins()
+
         except Exception as e:
             QMessageBox.critical(self, "Fout bij installatie", f"❌ {e}")
