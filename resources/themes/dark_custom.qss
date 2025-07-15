@@ -1,0 +1,75 @@
+
+/* === Hauswerk Dark Theme met rood-accenten === */
+
+QWidget {
+    background-color: #2a0000;
+    color: #eeeeee;
+    font-size: 13px;
+    font-family: "DejaVu Sans", sans-serif;
+}
+
+QMainWindow::separator {
+    background: #440000;
+}
+
+QPushButton {
+    background-color: #440000;
+    color: #ffffff;
+    border: 1px solid #dd4444;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+QPushButton:hover {
+    background-color: #661111;
+    border: 1px solid #ff6666;
+}
+
+QPushButton:pressed {
+    background-color: #990000;
+}
+
+QLineEdit, QComboBox, QTextEdit {
+    background-color: #3a0d0d;
+    border: 1px solid #bb4444;
+    border-radius: 3px;
+    color: #ffffff;
+    padding: 4px;
+}
+
+QTabWidget::pane {
+    border: 1px solid #882222;
+}
+
+QTabBar::tab {
+    background: #550000;
+    color: #dddddd;
+    border: 1px solid #aa0000;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 6px;
+}
+
+QTabBar::tab:selected {
+    background: #880000;
+    font-weight: bold;
+}
+
+QMenuBar {
+    background-color: #330000;
+}
+
+QMenuBar::item:selected {
+    background: #660000;
+}
+
+QMenu {
+    background-color: #3a0000;
+    border: 1px solid #aa0000;
+    color: #eeeeee;
+}
+
+QStatusBar {
+    background: #440000;
+    color: #eeeeee;
+}

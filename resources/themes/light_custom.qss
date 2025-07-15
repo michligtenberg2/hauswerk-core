@@ -1,0 +1,72 @@
+
+/* === Hauswerk Light Theme met lichtrode basis === */
+
+QWidget {
+    background-color: rgb(255, 170, 170);
+    color: #2a2a2a;
+    font-size: 13px;
+    font-family: "DejaVu Sans", sans-serif;
+}
+
+QMainWindow::separator {
+    background: #aa0000;
+}
+
+QPushButton {
+    background-color: #ffffff;
+    color: #2a2a2a;
+    border: 1px solid #990000;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+QPushButton:hover {
+    background-color: #ffdddd;
+    border: 1px solid #cc0000;
+}
+
+QPushButton:pressed {
+    background-color: #ffcccc;
+}
+
+QLineEdit, QComboBox, QTextEdit {
+    background-color: #fffafa;
+    border: 1px solid #aa0000;
+    border-radius: 3px;
+    padding: 4px;
+}
+
+QTabWidget::pane {
+    border: 1px solid #992222;
+}
+
+QTabBar::tab {
+    background: #ffdede;
+    border: 1px solid #aa0000;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 6px;
+}
+
+QTabBar::tab:selected {
+    background: #ffffff;
+    font-weight: bold;
+}
+
+QMenuBar {
+    background-color: #ffe5e5;
+}
+
+QMenuBar::item:selected {
+    background: #ffcccc;
+}
+
+QMenu {
+    background-color: #ffecec;
+    border: 1px solid #aa0000;
+}
+
+QStatusBar {
+    background: #ffe3e3;
+    color: #440000;
+}

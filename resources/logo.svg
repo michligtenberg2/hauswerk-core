@@ -1,0 +1,3120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="592"
+   height="560"
+   class="svgbob"
+   version="1.1"
+   id="svg901"
+   sodipodi:docname="hauswerk_artwork.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview903"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="1.1785714"
+     inkscape:cx="173.09091"
+     inkscape:cy="439.9394"
+     inkscape:window-width="1600"
+     inkscape:window-height="848"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <style
+     id="style2">.svgbob line, .svgbob path, .svgbob circle, .svgbob rect, .svgbob polygon {
+    stroke: black;
+    stroke-width: 2;
+    stroke-opacity: 1;
+    fill-opacity: 1;
+    stroke-linecap: round;
+    stroke-linejoin: miter;
+}
+.svgbob text {
+    white-space: pre;
+    fill: black;
+    font-family: Iosevka Fixed, monospace;
+    font-size: 14px;
+}
+.svgbob rect.backdrop {
+    stroke: none;
+    fill: white;
+}
+.svgbob .broken {
+    stroke-dasharray: 8;
+}
+.svgbob .filled {
+    fill: black;
+}
+.svgbob .bg_filled {
+    fill: white;
+    stroke-width: 1;
+}
+.svgbob .nofill {
+    fill: white;
+}
+.svgbob .end_marked_arrow {
+    marker-end: url(#arrow);
+}
+.svgbob .start_marked_arrow {
+    marker-start: url(#arrow);
+}
+.svgbob .end_marked_diamond {
+    marker-end: url(#diamond);
+}
+.svgbob .start_marked_diamond {
+    marker-start: url(#diamond);
+}
+.svgbob .end_marked_circle {
+    marker-end: url(#circle);
+}
+.svgbob .start_marked_circle {
+    marker-start: url(#circle);
+}
+.svgbob .end_marked_open_circle {
+    marker-end: url(#open_circle);
+}
+.svgbob .start_marked_open_circle {
+    marker-start: url(#open_circle);
+}
+.svgbob .end_marked_big_open_circle {
+    marker-end: url(#big_open_circle);
+}
+.svgbob .start_marked_big_open_circle {
+    marker-start: url(#big_open_circle);
+}<!--separator-->
+</style>
+  <defs
+     id="defs19">
+    <marker
+       id="arrow"
+       viewBox="-2 -2 8 8"
+       refX="4"
+       refY="2"
+       markerWidth="7"
+       markerHeight="7"
+       orient="auto-start-reverse">
+      <polygon
+         points="0,0 0,4 4,2 0,0"
+         id="polygon4" />
+    </marker>
+    <marker
+       id="diamond"
+       viewBox="-2 -2 8 8"
+       refX="4"
+       refY="2"
+       markerWidth="7"
+       markerHeight="7"
+       orient="auto-start-reverse">
+      <polygon
+         points="0,2 2,0 4,2 2,4 0,2"
+         id="polygon7" />
+    </marker>
+    <marker
+       id="circle"
+       viewBox="0 0 8 8"
+       refX="4"
+       refY="4"
+       markerWidth="7"
+       markerHeight="7"
+       orient="auto-start-reverse">
+      <circle
+         cx="4"
+         cy="4"
+         r="2"
+         class="filled"
+         id="circle10" />
+    </marker>
+    <marker
+       id="open_circle"
+       viewBox="0 0 8 8"
+       refX="4"
+       refY="4"
+       markerWidth="7"
+       markerHeight="7"
+       orient="auto-start-reverse">
+      <circle
+         cx="4"
+         cy="4"
+         r="2"
+         class="bg_filled"
+         id="circle13" />
+    </marker>
+    <marker
+       id="big_open_circle"
+       viewBox="0 0 8 8"
+       refX="4"
+       refY="4"
+       markerWidth="7"
+       markerHeight="7"
+       orient="auto-start-reverse">
+      <circle
+         cx="4"
+         cy="4"
+         r="3"
+         class="bg_filled"
+         id="circle16" />
+    </marker>
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Layer 1"
+     style="fill:#008000">
+    <rect
+       style="fill:#ffaaaa;stroke-width:1.961"
+       id="rect1077"
+       width="659.52209"
+       height="591.44745"
+       x="-19.665775"
+       y="-13.590803" />
+  </g>
+  <rect
+     x="106"
+     y="32"
+     width="16"
+     height="48"
+     class="solid nofill"
+     rx="0"
+     id="rect23"
+     style="mix-blend-mode:color-burn;fill:none;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <rect
+     x="474"
+     y="32"
+     width="16"
+     height="32"
+     class="solid nofill"
+     rx="0"
+     id="rect25"
+     style="mix-blend-mode:color-burn;fill:none;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="40"
+     y="140"
+     id="text27"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">Huiswerk,</text>
+  <text
+     x="120"
+     y="140"
+     id="text29"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">maar</text>
+  <text
+     x="160"
+     y="140"
+     id="text31"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">dan</text>
+  <text
+     x="192"
+     y="140"
+     id="text33"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">leuk</text>
+  <line
+     x1="278"
+     y1="144"
+     x2="286"
+     y2="144"
+     class="solid"
+     id="line35"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <line
+     x1="358"
+     y1="144"
+     x2="366"
+     y2="144"
+     class="solid"
+     id="line37"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <line
+     x1="398"
+     y1="144"
+     x2="406"
+     y2="144"
+     class="solid"
+     id="line39"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <line
+     x1="478"
+     y1="144"
+     x2="486"
+     y2="144"
+     class="solid"
+     id="line41"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="96"
+     y="204"
+     id="text43"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">`</text>
+  <line
+     x1="106"
+     y1="204"
+     x2="106"
+     y2="224"
+     class="solid"
+     id="line45"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="192"
+     y="204"
+     id="text47"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">.</text>
+  <line
+     x1="458"
+     y1="204"
+     x2="458"
+     y2="228"
+     class="solid"
+     id="line49"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <line
+     x1="38"
+     y1="224"
+     x2="54"
+     y2="224"
+     class="solid"
+     id="line51"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <line
+     x1="78"
+     y1="208"
+     x2="94"
+     y2="240"
+     class="solid"
+     id="line53"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <line
+     x1="198"
+     y1="208"
+     x2="190"
+     y2="224"
+     class="solid"
+     id="line55"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <line
+     x1="430"
+     y1="224"
+     x2="438"
+     y2="224"
+     class="solid"
+     id="line57"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="440"
+     y="220"
+     id="text59"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">.</text>
+  <line
+     x1="458"
+     y1="200"
+     x2="442"
+     y2="216"
+     class="broken"
+     id="line61"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="16"
+     y="236"
+     id="text63"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">.'</text>
+  <text
+     x="56"
+     y="236"
+     id="text65"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">`'</text>
+  <line
+     x1="110"
+     y1="224"
+     x2="102"
+     y2="240"
+     class="solid"
+     id="line67"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="112"
+     y="236"
+     id="text69"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">,</text>
+  <text
+     x="136"
+     y="236"
+     id="text71"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">';,'</text>
+  <line
+     x1="166"
+     y1="232"
+     x2="174"
+     y2="232"
+     class="solid"
+     id="line73"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="176"
+     y="236"
+     id="text75"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">'`</text>
+  <text
+     x="264"
+     y="236"
+     id="text77"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">'</text>
+  <text
+     x="408"
+     y="236"
+     id="text79"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">,'`</text>
+  <text
+     x="464"
+     y="236"
+     id="text81"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">,</text>
+  <text
+     x="504"
+     y="236"
+     id="text83"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">,</text>
+  <text
+     x="88"
+     y="252"
+     id="text85"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">.;'</text>
+  <line
+     x1="142"
+     y1="240"
+     x2="134"
+     y2="256"
+     class="solid"
+     id="line87"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <line
+     x1="154"
+     y1="240"
+     x2="154"
+     y2="260"
+     class="solid"
+     id="line89"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="160"
+     y="252"
+     id="text91"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">`</text>
+  <line
+     x1="166"
+     y1="240"
+     x2="174"
+     y2="256"
+     class="solid"
+     id="line93"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="176"
+     y="252"
+     id="text95"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">,</text>
+  <text
+     x="392"
+     y="252"
+     id="text97"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">,'</text>
+  <text
+     x="456"
+     y="252"
+     id="text99"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">'</text>
+  <line
+     x1="502"
+     y1="240"
+     x2="494"
+     y2="256"
+     class="solid"
+     id="line101"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <line
+     x1="506"
+     y1="240"
+     x2="506"
+     y2="272"
+     class="solid"
+     id="line103"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="80"
+     y="268"
+     id="text105"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">;</text>
+  <line
+     x1="94"
+     y1="256"
+     x2="86"
+     y2="272"
+     class="solid"
+     id="line107"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="128"
+     y="268"
+     id="text109"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">|</text>
+  <text
+     x="144"
+     y="268"
+     id="text111"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">,</text>
+  <text
+     x="184"
+     y="268"
+     id="text113"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">`</text>
+  <text
+     x="288"
+     y="268"
+     id="text115"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">|</text>
+  <text
+     x="328"
+     y="268"
+     id="text117"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">.,.</text>
+  <line
+     x1="350"
+     y1="272"
+     x2="358"
+     y2="272"
+     class="solid"
+     id="line119"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="368"
+     y="268"
+     id="text121"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">.'</text>
+  <text
+     x="480"
+     y="268"
+     id="text123"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">,'</text>
+  <text
+     x="512"
+     y="268"
+     id="text125"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">,</text>
+  <text
+     x="8"
+     y="284"
+     id="text127"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">,'```</text>
+  <text
+     x="64"
+     y="284"
+     id="text129"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">.,'</text>
+  <text
+     x="200"
+     y="284"
+     id="text131"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">`</text>
+  <line
+     x1="206"
+     y1="280"
+     x2="214"
+     y2="280"
+     class="solid"
+     id="line133"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="216"
+     y="284"
+     id="text135"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">'</text>
+  <text
+     x="304"
+     y="284"
+     id="text137"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">'`</text>
+  <text
+     x="360"
+     y="284"
+     id="text139"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">`'</text>
+  <text
+     x="432"
+     y="284"
+     id="text141"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">,</text>
+  <line
+     x1="514"
+     y1="272"
+     x2="514"
+     y2="340"
+     class="solid"
+     id="line143"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="8"
+     y="300"
+     id="text145"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">`..</text>
+  <text
+     x="152"
+     y="300"
+     id="text147"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">;</text>
+  <line
+     x1="290"
+     y1="280"
+     x2="306"
+     y2="296"
+     class="broken"
+     id="line149"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <line
+     x1="306"
+     y1="300"
+     x2="306"
+     y2="320"
+     class="solid"
+     id="line151"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="40"
+     y="316"
+     id="text153"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">,</text>
+  <text
+     x="64"
+     y="316"
+     id="text155"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">;</text>
+  <line
+     x1="102"
+     y1="304"
+     x2="86"
+     y2="336"
+     class="solid"
+     id="line157"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="104"
+     y="316"
+     id="text159"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">`</text>
+  <line
+     x1="154"
+     y1="304"
+     x2="154"
+     y2="324"
+     class="solid"
+     id="line161"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="384"
+     y="316"
+     id="text163"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">,'</text>
+  <text
+     x="24"
+     y="332"
+     id="text165"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">,'</text>
+  <text
+     x="160"
+     y="332"
+     id="text167"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">.</text>
+  <text
+     x="280"
+     y="332"
+     id="text169"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">.</text>
+  <text
+     x="304"
+     y="332"
+     id="text171"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">;</text>
+  <line
+     x1="382"
+     y1="320"
+     x2="374"
+     y2="336"
+     class="solid"
+     id="line173"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="48"
+     y="348"
+     id="text175"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">,'</text>
+  <text
+     x="80"
+     y="348"
+     id="text177"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">;</text>
+  <text
+     x="120"
+     y="348"
+     id="text179"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">.</text>
+  <line
+     x1="126"
+     y1="344"
+     x2="134"
+     y2="344"
+     class="solid"
+     id="line181"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="136"
+     y="348"
+     id="text183"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">.</text>
+  <line
+     x1="286"
+     y1="336"
+     x2="278"
+     y2="352"
+     class="solid"
+     id="line185"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <line
+     x1="310"
+     y1="336"
+     x2="302"
+     y2="352"
+     class="solid"
+     id="line187"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <line
+     x1="370"
+     y1="348"
+     x2="370"
+     y2="368"
+     class="solid"
+     id="line189"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="376"
+     y="348"
+     id="text191"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">'</text>
+  <text
+     x="32"
+     y="364"
+     id="text193"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">'`</text>
+  <line
+     x1="142"
+     y1="352"
+     x2="126"
+     y2="384"
+     class="solid"
+     id="line195"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <line
+     x1="146"
+     y1="364"
+     x2="146"
+     y2="432"
+     class="solid"
+     id="line197"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="152"
+     y="364"
+     id="text199"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">'`</text>
+  <line
+     x1="170"
+     y1="364"
+     x2="170"
+     y2="388"
+     class="solid"
+     id="line201"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="248"
+     y="364"
+     id="text203"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">`</text>
+  <line
+     x1="258"
+     y1="364"
+     x2="258"
+     y2="400"
+     class="solid"
+     id="line205"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="272"
+     y="364"
+     id="text207"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">;</text>
+  <line
+     x1="306"
+     y1="364"
+     x2="306"
+     y2="420"
+     class="broken"
+     id="line209"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <line
+     x1="510"
+     y1="352"
+     x2="502"
+     y2="368"
+     class="solid"
+     id="line211"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="496"
+     y="380"
+     id="text213"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">'</text>
+  <text
+     x="56"
+     y="396"
+     id="text215"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">.</text>
+  <text
+     x="112"
+     y="396"
+     id="text217"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">'`</text>
+  <text
+     x="248"
+     y="396"
+     id="text219"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">.</text>
+  <text
+     x="264"
+     y="396"
+     id="text221"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">'</text>
+  <text
+     x="384"
+     y="396"
+     id="text223"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">.</text>
+  <text
+     x="480"
+     y="396"
+     id="text225"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">,'</text>
+  <text
+     x="32"
+     y="412"
+     id="text227"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">'</text>
+  <text
+     x="80"
+     y="412"
+     id="text229"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">`;</text>
+  <line
+     x1="166"
+     y1="400"
+     x2="150"
+     y2="432"
+     class="solid"
+     id="line231"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="216"
+     y="412"
+     id="text233"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">'</text>
+  <text
+     x="232"
+     y="412"
+     id="text235"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">,;</text>
+  <line
+     x1="246"
+     y1="408"
+     x2="254"
+     y2="408"
+     class="solid"
+     id="line237"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="256"
+     y="412"
+     id="text239"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">.</text>
+  <text
+     x="408"
+     y="412"
+     id="text241"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">..</text>
+  <line
+     x1="422"
+     y1="416"
+     x2="438"
+     y2="416"
+     class="solid"
+     id="line243"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="440"
+     y="412"
+     id="text245"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">.,.</text>
+  <line
+     x1="462"
+     y1="408"
+     x2="470"
+     y2="408"
+     class="solid"
+     id="line247"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="472"
+     y="412"
+     id="text249"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">'</text>
+  <line
+     x1="506"
+     y1="400"
+     x2="522"
+     y2="416"
+     class="broken"
+     id="line251"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="56"
+     y="428"
+     id="text253"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">,'</text>
+  <line
+     x1="94"
+     y1="416"
+     x2="102"
+     y2="432"
+     class="solid"
+     id="line255"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="200"
+     y="428"
+     id="text257"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">,</text>
+  <line
+     x1="258"
+     y1="408"
+     x2="274"
+     y2="424"
+     class="broken"
+     id="line259"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="272"
+     y="428"
+     id="text261"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">.</text>
+  <text
+     x="520"
+     y="428"
+     id="text263"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">`'</text>
+  <line
+     x1="534"
+     y1="424"
+     x2="542"
+     y2="424"
+     class="solid"
+     id="line265"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="544"
+     y="428"
+     id="text267"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">..</text>
+  <text
+     x="16"
+     y="444"
+     id="text269"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">'</text>
+  <line
+     x1="22"
+     y1="440"
+     x2="38"
+     y2="440"
+     class="solid"
+     id="line271"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="40"
+     y="444"
+     id="text273"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">'`</text>
+  <text
+     x="104"
+     y="444"
+     id="text275"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">`'</text>
+  <text
+     x="144"
+     y="444"
+     id="text277"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">;</text>
+  <line
+     x1="150"
+     y1="448"
+     x2="158"
+     y2="448"
+     class="solid"
+     id="line279"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="160"
+     y="444"
+     id="text281"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">.</text>
+  <text
+     x="312"
+     y="444"
+     id="text283"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">'</text>
+  <text
+     x="104"
+     y="460"
+     id="text285"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">;</text>
+  <line
+     x1="174"
+     y1="448"
+     x2="190"
+     y2="480"
+     class="solid"
+     id="line287"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="216"
+     y="460"
+     id="text289"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">`.</text>
+  <text
+     x="472"
+     y="460"
+     id="text291"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">,</text>
+  <line
+     x1="478"
+     y1="456"
+     x2="486"
+     y2="456"
+     class="solid"
+     id="line293"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="488"
+     y="460"
+     id="text295"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">'`</text>
+  <line
+     x1="506"
+     y1="460"
+     x2="506"
+     y2="496"
+     class="solid"
+     id="line297"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="80"
+     y="476"
+     id="text299"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">;</text>
+  <line
+     x1="106"
+     y1="464"
+     x2="106"
+     y2="480"
+     class="solid"
+     id="line301"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <line
+     x1="330"
+     y1="464"
+     x2="346"
+     y2="480"
+     class="broken"
+     id="line303"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="456"
+     y="476"
+     id="text305"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">,'</text>
+  <text
+     x="552"
+     y="476"
+     id="text307"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">,'</text>
+  <text
+     x="192"
+     y="492"
+     id="text309"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">;</text>
+  <text
+     x="344"
+     y="492"
+     id="text311"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">`</text>
+  <line
+     x1="350"
+     y1="488"
+     x2="358"
+     y2="488"
+     class="solid"
+     id="line313"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="360"
+     y="492"
+     id="text315"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">.</text>
+  <text
+     x="440"
+     y="492"
+     id="text317"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">,'</text>
+  <text
+     x="536"
+     y="492"
+     id="text319"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">,'</text>
+  <text
+     x="368"
+     y="508"
+     id="text321"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">`''</text>
+  <line
+     x1="390"
+     y1="504"
+     x2="406"
+     y2="504"
+     class="solid"
+     id="line323"
+     style="mix-blend-mode:color-burn;stroke-dasharray:1,1;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  <text
+     x="408"
+     y="508"
+     id="text325"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">''`</text>
+  <text
+     x="512"
+     y="508"
+     id="text327"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">`'`</text>
+  <text
+     x="514"
+     y="526"
+     id="text329"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">m.L</text>
+  <text
+     x="328"
+     y="300"
+     id="text331"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">o</text>
+  <g
+     id="g357"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <line
+       x1="4"
+       y1="16"
+       x2="28"
+       y2="16"
+       class="solid"
+       id="line333"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="4"
+       y1="16"
+       x2="4"
+       y2="112"
+       class="solid"
+       id="line335"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="28"
+       y1="16"
+       x2="28"
+       y2="48"
+       class="solid"
+       id="line337"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="4"
+       y1="112"
+       x2="28"
+       y2="112"
+       class="solid"
+       id="line339"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="44"
+       y1="16"
+       x2="68"
+       y2="16"
+       class="solid"
+       id="line341"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="44"
+       y1="16"
+       x2="44"
+       y2="48"
+       class="solid"
+       id="line343"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="68"
+       y1="16"
+       x2="68"
+       y2="112"
+       class="solid"
+       id="line345"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="28"
+       y1="48"
+       x2="44"
+       y2="48"
+       class="solid"
+       id="line347"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="28"
+       y1="96"
+       x2="44"
+       y2="96"
+       class="solid"
+       id="line349"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="28"
+       y1="96"
+       x2="28"
+       y2="112"
+       class="solid"
+       id="line351"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="44"
+       y1="96"
+       x2="44"
+       y2="112"
+       class="solid"
+       id="line353"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="44"
+       y1="112"
+       x2="68"
+       y2="112"
+       class="solid"
+       id="line355"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g375"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <line
+       x1="76"
+       y1="16"
+       x2="140"
+       y2="16"
+       class="solid"
+       id="line359"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="76"
+       y1="16"
+       x2="76"
+       y2="112"
+       class="solid"
+       id="line361"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="140"
+       y1="16"
+       x2="140"
+       y2="112"
+       class="solid"
+       id="line363"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="76"
+       y1="112"
+       x2="100"
+       y2="112"
+       class="solid"
+       id="line365"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="100"
+       y1="96"
+       x2="116"
+       y2="96"
+       class="solid"
+       id="line367"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="100"
+       y1="96"
+       x2="100"
+       y2="112"
+       class="solid"
+       id="line369"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="116"
+       y1="96"
+       x2="116"
+       y2="112"
+       class="solid"
+       id="line371"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="116"
+       y1="112"
+       x2="140"
+       y2="112"
+       class="solid"
+       id="line373"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g393"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <line
+       x1="148"
+       y1="16"
+       x2="172"
+       y2="16"
+       class="solid"
+       id="line377"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="148"
+       y1="16"
+       x2="148"
+       y2="112"
+       class="solid"
+       id="line379"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="172"
+       y1="16"
+       x2="172"
+       y2="96"
+       class="solid"
+       id="line381"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="188"
+       y1="16"
+       x2="212"
+       y2="16"
+       class="solid"
+       id="line383"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="188"
+       y1="16"
+       x2="188"
+       y2="96"
+       class="solid"
+       id="line385"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="212"
+       y1="16"
+       x2="212"
+       y2="112"
+       class="solid"
+       id="line387"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="172"
+       y1="96"
+       x2="188"
+       y2="96"
+       class="solid"
+       id="line389"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="148"
+       y1="112"
+       x2="212"
+       y2="112"
+       class="solid"
+       id="line391"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g419"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <line
+       x1="220"
+       y1="16"
+       x2="284"
+       y2="16"
+       class="solid"
+       id="line395"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="220"
+       y1="16"
+       x2="220"
+       y2="80"
+       class="solid"
+       id="line397"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="284"
+       y1="16"
+       x2="284"
+       y2="48"
+       class="solid"
+       id="line399"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="236"
+       y1="48"
+       x2="284"
+       y2="48"
+       class="solid"
+       id="line401"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="236"
+       y1="48"
+       x2="236"
+       y2="64"
+       class="solid"
+       id="line403"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="236"
+       y1="64"
+       x2="284"
+       y2="64"
+       class="solid"
+       id="line405"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="220"
+       y1="80"
+       x2="268"
+       y2="80"
+       class="solid"
+       id="line407"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="284"
+       y1="64"
+       x2="284"
+       y2="112"
+       class="solid"
+       id="line409"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="220"
+       y1="96"
+       x2="268"
+       y2="96"
+       class="solid"
+       id="line411"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="220"
+       y1="96"
+       x2="220"
+       y2="112"
+       class="solid"
+       id="line415"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="220"
+       y1="112"
+       x2="284"
+       y2="112"
+       class="solid"
+       id="line417"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="268"
+       y1="80"
+       x2="268"
+       y2="96"
+       class="solid"
+       id="line413"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g443"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <line
+       x1="292"
+       y1="16"
+       x2="308"
+       y2="16"
+       class="solid"
+       id="line421"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="292"
+       y1="16"
+       x2="292"
+       y2="112"
+       class="solid"
+       id="line423"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="308"
+       y1="16"
+       x2="308"
+       y2="48"
+       class="solid"
+       id="line425"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="292"
+       y1="112"
+       x2="316"
+       y2="112"
+       class="solid"
+       id="line427"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="340"
+       y1="16"
+       x2="356"
+       y2="16"
+       class="solid"
+       id="line429"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="340"
+       y1="16"
+       x2="340"
+       y2="48"
+       class="solid"
+       id="line431"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="356"
+       y1="16"
+       x2="356"
+       y2="112"
+       class="solid"
+       id="line433"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="316"
+       y1="96"
+       x2="332"
+       y2="96"
+       class="solid"
+       id="line435"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="316"
+       y1="96"
+       x2="316"
+       y2="112"
+       class="solid"
+       id="line437"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="332"
+       y1="96"
+       x2="332"
+       y2="112"
+       class="solid"
+       id="line439"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="332"
+       y1="112"
+       x2="356"
+       y2="112"
+       class="solid"
+       id="line441"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g469"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <line
+       x1="364"
+       y1="16"
+       x2="428"
+       y2="16"
+       class="solid"
+       id="line445"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="364"
+       y1="16"
+       x2="364"
+       y2="112"
+       class="solid"
+       id="line447"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="428"
+       y1="16"
+       x2="428"
+       y2="48"
+       class="solid"
+       id="line449"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="396"
+       y1="48"
+       x2="428"
+       y2="48"
+       class="solid"
+       id="line451"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="396"
+       y1="48"
+       x2="396"
+       y2="64"
+       class="solid"
+       id="line453"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="396"
+       y1="64"
+       x2="428"
+       y2="64"
+       class="solid"
+       id="line455"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="364"
+       y1="112"
+       x2="428"
+       y2="112"
+       class="solid"
+       id="line457"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="396"
+       y1="80"
+       x2="428"
+       y2="80"
+       class="solid"
+       id="line459"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="428"
+       y1="64"
+       x2="428"
+       y2="80"
+       class="solid"
+       id="line461"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="396"
+       y1="80"
+       x2="396"
+       y2="96"
+       class="solid"
+       id="line463"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="396"
+       y1="96"
+       x2="428"
+       y2="96"
+       class="solid"
+       id="line465"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="428"
+       y1="96"
+       x2="428"
+       y2="112"
+       class="solid"
+       id="line467"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g491"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <line
+       x1="436"
+       y1="16"
+       x2="492"
+       y2="16"
+       class="solid"
+       id="line471"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="436"
+       y1="16"
+       x2="436"
+       y2="112"
+       class="solid"
+       id="line473"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="492"
+       y1="16"
+       x2="492"
+       y2="64"
+       class="solid"
+       id="line475"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="492"
+       y1="64"
+       x2="508"
+       y2="64"
+       class="solid"
+       id="line477"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="508"
+       y1="64"
+       x2="508"
+       y2="112"
+       class="solid"
+       id="line479"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="468"
+       y1="80"
+       x2="492"
+       y2="80"
+       class="solid"
+       id="line481"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="468"
+       y1="80"
+       x2="468"
+       y2="112"
+       class="solid"
+       id="line483"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="492"
+       y1="80"
+       x2="492"
+       y2="112"
+       class="solid"
+       id="line485"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="436"
+       y1="112"
+       x2="468"
+       y2="112"
+       class="solid"
+       id="line487"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="492"
+       y1="112"
+       x2="508"
+       y2="112"
+       class="solid"
+       id="line489"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g525"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <line
+       x1="516"
+       y1="16"
+       x2="548"
+       y2="16"
+       class="solid"
+       id="line493"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="516"
+       y1="16"
+       x2="516"
+       y2="112"
+       class="solid"
+       id="line495"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="548"
+       y1="16"
+       x2="548"
+       y2="48"
+       class="solid"
+       id="line497"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="516"
+       y1="112"
+       x2="548"
+       y2="112"
+       class="solid"
+       id="line499"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="564"
+       y1="16"
+       x2="580"
+       y2="16"
+       class="solid"
+       id="line501"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="564"
+       y1="16"
+       x2="564"
+       y2="48"
+       class="solid"
+       id="line503"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="580"
+       y1="16"
+       x2="580"
+       y2="64"
+       class="solid"
+       id="line505"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="548"
+       y1="48"
+       x2="564"
+       y2="48"
+       class="solid"
+       id="line507"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="564"
+       y1="64"
+       x2="580"
+       y2="64"
+       class="solid"
+       id="line509"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="564"
+       y1="64"
+       x2="564"
+       y2="80"
+       class="solid"
+       id="line511"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="564"
+       y1="80"
+       x2="580"
+       y2="80"
+       class="solid"
+       id="line513"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="580"
+       y1="80"
+       x2="580"
+       y2="112"
+       class="solid"
+       id="line515"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="548"
+       y1="96"
+       x2="564"
+       y2="96"
+       class="solid"
+       id="line517"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="548"
+       y1="96"
+       x2="548"
+       y2="112"
+       class="solid"
+       id="line519"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="564"
+       y1="96"
+       x2="564"
+       y2="112"
+       class="solid"
+       id="line521"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="564"
+       y1="112"
+       x2="580"
+       y2="112"
+       class="solid"
+       id="line523"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g533"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <line
+       x1="316"
+       y1="32"
+       x2="332"
+       y2="32"
+       class="solid"
+       id="line527"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="316"
+       y1="32"
+       x2="316"
+       y2="48"
+       class="solid"
+       id="line529"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="332"
+       y1="32"
+       x2="332"
+       y2="48"
+       class="solid"
+       id="line531"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g539"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <line
+       x1="528"
+       y1="144"
+       x2="576"
+       y2="144"
+       class="solid"
+       id="line535"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="568"
+       y1="128"
+       x2="576"
+       y2="144"
+       class="solid"
+       id="line537"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g551"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <path
+       d="m 48,168 a 4,4 0 0 0 -4,4"
+       class="nofill"
+       id="path541"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="44"
+       y1="172"
+       x2="44"
+       y2="208"
+       class="solid"
+       id="line543"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="48"
+       y1="168"
+       x2="536"
+       y2="168"
+       class="solid"
+       id="line545"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <path
+       d="m 536,168 a 4,4 0 0 1 4,4"
+       class="nofill"
+       id="path547"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="540"
+       y1="172"
+       x2="540"
+       y2="416"
+       class="solid"
+       id="line549"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g557"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <line
+       x1="76"
+       y1="192"
+       x2="88"
+       y2="192"
+       class="solid"
+       id="line553"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="76"
+       y1="192"
+       x2="76"
+       y2="208"
+       class="solid"
+       id="line555"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g581"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <path
+       d="m 136,184 a 8,8 0 0 0 -6,4"
+       class="nofill"
+       id="path559"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="130"
+       y1="188"
+       x2="124"
+       y2="200"
+       class="solid"
+       id="line561"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="136"
+       y1="184"
+       x2="144"
+       y2="184"
+       class="solid"
+       id="line563"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <path
+       d="m 144,184 a 4,4 0 0 1 4,4"
+       class="nofill"
+       id="path565"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="148"
+       y1="188"
+       x2="148"
+       y2="200"
+       class="solid"
+       id="line567"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="124"
+       y1="200"
+       x2="124"
+       y2="228"
+       class="solid"
+       id="line569"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="148"
+       y1="200"
+       x2="136"
+       y2="224"
+       class="solid"
+       id="line571"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="124"
+       y1="224"
+       x2="136"
+       y2="224"
+       class="solid"
+       id="line573"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="112"
+       y1="232"
+       x2="120"
+       y2="232"
+       class="solid"
+       id="line575"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="128"
+       y1="224"
+       x2="120"
+       y2="232"
+       class="solid"
+       id="line577"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <path
+       d="m 124,228 a 4,4 0 0 1 -4,4"
+       class="nofill"
+       id="path579"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g589"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <path
+       d="m 168,200 a 8,8 0 0 0 -6,4"
+       class="nofill"
+       id="path583"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="162"
+       y1="204"
+       x2="152"
+       y2="224"
+       class="solid"
+       id="line585"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="168"
+       y1="200"
+       x2="184"
+       y2="200"
+       class="solid"
+       id="line587"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g595"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <path
+       d="m 56,224 a 32,32 0 0 1 16,16"
+       class="nofill"
+       id="path591"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="72"
+       y1="240"
+       x2="80"
+       y2="256"
+       class="solid"
+       id="line593"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g601"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <path
+       d="m 256,224 a 32,32 0 0 1 16,16"
+       class="nofill"
+       id="path597"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="272"
+       y1="240"
+       x2="280"
+       y2="256"
+       class="solid"
+       id="line599"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g625"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <line
+       x1="16"
+       y1="240"
+       x2="26"
+       y2="260"
+       class="solid"
+       id="line603"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <path
+       d="m 26,260 a 8,8 0 0 0 6,4"
+       class="nofill"
+       id="path605"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="32"
+       y1="264"
+       x2="40"
+       y2="264"
+       class="solid"
+       id="line607"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <path
+       d="m 40,264 a 4,4 0 0 1 4,4"
+       class="nofill"
+       id="path609"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="40"
+       y1="264"
+       x2="48"
+       y2="272"
+       class="solid"
+       id="line611"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="44"
+       y1="268"
+       x2="44"
+       y2="276"
+       class="solid"
+       id="line613"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="48"
+       y1="272"
+       x2="56"
+       y2="272"
+       class="solid"
+       id="line615"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="64"
+       y1="264"
+       x2="56"
+       y2="272"
+       class="solid"
+       id="line617"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="64"
+       y1="264"
+       x2="72"
+       y2="264"
+       class="solid"
+       id="line619"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <path
+       d="m 44,276 a 4,4 0 0 0 4,4"
+       class="nofill"
+       id="path621"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="48"
+       y1="280"
+       x2="56"
+       y2="280"
+       class="solid"
+       id="line623"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g639"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <path
+       d="m 184,248 a 4,4 0 0 0 -4,4"
+       class="nofill"
+       id="path627"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="180"
+       y1="252"
+       x2="180"
+       y2="256"
+       class="solid"
+       id="line629"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="184"
+       y1="248"
+       x2="200"
+       y2="248"
+       class="solid"
+       id="line631"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <path
+       d="m 200,248 a 8,8 0 0 1 6,4"
+       class="nofill"
+       id="path633"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="206"
+       y1="252"
+       x2="216"
+       y2="272"
+       class="solid"
+       id="line635"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="180"
+       y1="256"
+       x2="196"
+       y2="272"
+       class="broken"
+       id="line637"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g651"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <line
+       x1="460"
+       y1="240"
+       x2="460"
+       y2="276"
+       class="solid"
+       id="line641"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="460"
+       y1="272"
+       x2="472"
+       y2="272"
+       class="solid"
+       id="line643"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="432"
+       y1="280"
+       x2="456"
+       y2="280"
+       class="solid"
+       id="line645"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="464"
+       y1="272"
+       x2="456"
+       y2="280"
+       class="solid"
+       id="line647"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <path
+       d="m 460,276 a 4,4 0 0 1 -4,4"
+       class="nofill"
+       id="path649"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g659"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <line
+       x1="160"
+       y1="256"
+       x2="144"
+       y2="288"
+       class="solid"
+       id="line653"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="160"
+       y1="256"
+       x2="172"
+       y2="280"
+       class="solid"
+       id="line655"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="172"
+       y1="280"
+       x2="172"
+       y2="304"
+       class="solid"
+       id="line657"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g665"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <line
+       x1="120"
+       y1="272"
+       x2="128"
+       y2="288"
+       class="solid"
+       id="line661"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="136"
+       y1="272"
+       x2="128"
+       y2="288"
+       class="solid"
+       id="line663"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g673"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <path
+       d="m 288,280 a 4,4 0 0 0 -4,4"
+       class="nofill"
+       id="path667"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="284"
+       y1="284"
+       x2="284"
+       y2="324"
+       class="solid"
+       id="line669"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="288"
+       y1="280"
+       x2="296"
+       y2="280"
+       class="solid"
+       id="line671"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g679"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <path
+       d="m 360,272 a 32,32 0 0 1 16,16"
+       class="nofill"
+       id="path675"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="376"
+       y1="288"
+       x2="384"
+       y2="304"
+       class="solid"
+       id="line677"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g689"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <line
+       x1="416"
+       y1="288"
+       x2="424"
+       y2="288"
+       class="solid"
+       id="line681"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <path
+       d="m 396,296 a 8,8 0 0 0 -8,8"
+       class="nofill"
+       id="path683"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="396"
+       y1="296"
+       x2="408"
+       y2="296"
+       class="solid"
+       id="line685"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="416"
+       y1="288"
+       x2="408"
+       y2="296"
+       class="solid"
+       id="line687"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g699"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <line
+       x1="24"
+       y1="304"
+       x2="64"
+       y2="304"
+       class="solid"
+       id="line691"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="72"
+       y1="288"
+       x2="64"
+       y2="304"
+       class="solid"
+       id="line693"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="40"
+       y1="312"
+       x2="48"
+       y2="312"
+       class="solid"
+       id="line695"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="56"
+       y1="304"
+       x2="48"
+       y2="312"
+       class="solid"
+       id="line697"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g707"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <line
+       x1="108"
+       y1="316"
+       x2="108"
+       y2="344"
+       class="solid"
+       id="line701"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="108"
+       y1="344"
+       x2="80"
+       y2="400"
+       class="solid"
+       id="line703"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="84"
+       y1="392"
+       x2="104"
+       y2="392"
+       class="solid"
+       id="line705"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g713"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <line
+       x1="176"
+       y1="304"
+       x2="168"
+       y2="320"
+       class="solid"
+       id="line709"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <path
+       d="m 168,320 a 32,32 0 0 1 -16,16"
+       class="nofill"
+       id="path711"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g727"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <line
+       x1="64"
+       y1="320"
+       x2="60"
+       y2="328"
+       class="solid"
+       id="line715"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="60"
+       y1="328"
+       x2="60"
+       y2="376"
+       class="solid"
+       id="line717"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="60"
+       y1="376"
+       x2="72"
+       y2="400"
+       class="solid"
+       id="line719"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="56"
+       y1="400"
+       x2="72"
+       y2="400"
+       class="solid"
+       id="line721"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="76"
+       y1="352"
+       x2="76"
+       y2="392"
+       class="solid"
+       id="line723"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="76"
+       y1="392"
+       x2="64"
+       y2="416"
+       class="solid"
+       id="line725"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g735"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <line
+       x1="16"
+       y1="336"
+       x2="6"
+       y2="356"
+       class="solid"
+       id="line729"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <path
+       d="m 6,356 a 3,3 0 0 0 2,4"
+       class="nofill"
+       id="path731"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="8"
+       y1="360"
+       x2="24"
+       y2="360"
+       class="solid"
+       id="line733"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g741"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <line
+       x1="228"
+       y1="352"
+       x2="240"
+       y2="352"
+       class="solid"
+       id="line737"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="228"
+       y1="352"
+       x2="228"
+       y2="368"
+       class="solid"
+       id="line739"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g751"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <line
+       x1="44"
+       y1="352"
+       x2="44"
+       y2="400"
+       class="solid"
+       id="line743"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="32"
+       y1="400"
+       x2="44"
+       y2="400"
+       class="solid"
+       id="line745"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <path
+       d="M 32,400 A 32,32 0 0 0 16,416"
+       class="nofill"
+       id="path747"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="16"
+       y1="416"
+       x2="8"
+       y2="432"
+       class="solid"
+       id="line749"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g763"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <line
+       x1="272"
+       y1="368"
+       x2="288"
+       y2="368"
+       class="solid"
+       id="line753"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="272"
+       y1="368"
+       x2="264"
+       y2="384"
+       class="solid"
+       id="line755"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="272"
+       y1="368"
+       x2="280"
+       y2="384"
+       class="solid"
+       id="line757"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="280"
+       y1="384"
+       x2="288"
+       y2="384"
+       class="solid"
+       id="line759"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <path
+       d="m 288,368 a 16,16 0 0 1 0,16"
+       class="nofill"
+       id="path761"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g789"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <path
+       d="m 184,376 a 4,4 0 0 0 -4,4"
+       class="nofill"
+       id="path765"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="180"
+       y1="380"
+       x2="180"
+       y2="392"
+       class="solid"
+       id="line767"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="184"
+       y1="376"
+       x2="192"
+       y2="376"
+       class="solid"
+       id="line769"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <path
+       d="m 192,376 a 8,8 0 0 1 6,4"
+       class="nofill"
+       id="path771"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="198"
+       y1="380"
+       x2="208"
+       y2="400"
+       class="solid"
+       id="line773"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="180"
+       y1="392"
+       x2="192"
+       y2="416"
+       class="solid"
+       id="line775"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="192"
+       y1="416"
+       x2="224"
+       y2="416"
+       class="solid"
+       id="line777"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="216"
+       y1="416"
+       x2="232"
+       y2="448"
+       class="solid"
+       id="line779"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="200"
+       y1="424"
+       x2="212"
+       y2="424"
+       class="solid"
+       id="line781"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="212"
+       y1="416"
+       x2="212"
+       y2="448"
+       class="solid"
+       id="line783"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="224"
+       y1="464"
+       x2="232"
+       y2="464"
+       class="solid"
+       id="line785"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <path
+       d="m 232,448 a 16,16 0 0 1 0,16"
+       class="nofill"
+       id="path787"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g795"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <line
+       x1="224"
+       y1="368"
+       x2="232"
+       y2="384"
+       class="solid"
+       id="line791"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <path
+       d="m 232,384 a 32,32 0 0 0 16,16"
+       class="nofill"
+       id="path793"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g801"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <line
+       x1="360"
+       y1="368"
+       x2="368"
+       y2="384"
+       class="solid"
+       id="line797"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <path
+       d="m 368,384 a 32,32 0 0 0 16,16"
+       class="nofill"
+       id="path799"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g807"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <line
+       x1="488"
+       y1="384"
+       x2="496"
+       y2="400"
+       class="solid"
+       id="line803"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <path
+       d="m 496,400 a 32,32 0 0 0 16,16"
+       class="nofill"
+       id="path805"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g813"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <path
+       d="m 380,400 a 8,8 0 0 0 8,8"
+       class="nofill"
+       id="path809"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="388"
+       y1="408"
+       x2="400"
+       y2="408"
+       class="solid"
+       id="line811"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g821"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <line
+       x1="80"
+       y1="416"
+       x2="76"
+       y2="424"
+       class="solid"
+       id="line815"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="76"
+       y1="424"
+       x2="76"
+       y2="464"
+       class="solid"
+       id="line817"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="80"
+       y1="416"
+       x2="96"
+       y2="448"
+       class="solid"
+       id="line819"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g833"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <line
+       x1="184"
+       y1="432"
+       x2="192"
+       y2="432"
+       class="solid"
+       id="line823"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <path
+       d="m 168,440 a 4,4 0 0 0 -4,4"
+       class="nofill"
+       id="path825"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="164"
+       y1="444"
+       x2="164"
+       y2="496"
+       class="solid"
+       id="line827"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="168"
+       y1="440"
+       x2="176"
+       y2="440"
+       class="solid"
+       id="line829"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="184"
+       y1="432"
+       x2="176"
+       y2="440"
+       class="solid"
+       id="line831"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g845"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <line
+       x1="240"
+       y1="416"
+       x2="250"
+       y2="436"
+       class="solid"
+       id="line835"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <path
+       d="m 250,436 a 8,8 0 0 0 6,4"
+       class="nofill"
+       id="path837"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="256"
+       y1="440"
+       x2="264"
+       y2="440"
+       class="solid"
+       id="line839"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="268"
+       y1="432"
+       x2="268"
+       y2="436"
+       class="solid"
+       id="line841"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <path
+       d="m 268,436 a 4,4 0 0 1 -4,4"
+       class="nofill"
+       id="path843"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g853"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <line
+       x1="552"
+       y1="432"
+       x2="568"
+       y2="432"
+       class="solid"
+       id="line847"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <path
+       d="m 568,432 a 16,16 0 0 1 0,16"
+       class="nofill"
+       id="path849"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="568"
+       y1="448"
+       x2="560"
+       y2="464"
+       class="solid"
+       id="line851"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g873"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <line
+       x1="44"
+       y1="448"
+       x2="44"
+       y2="532"
+       class="solid"
+       id="line863"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <path
+       d="m 44,532 a 4,4 0 0 0 4,4"
+       class="nofill"
+       id="path865"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="48"
+       y1="536"
+       x2="536"
+       y2="536"
+       class="solid"
+       id="line867"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="540"
+       y1="496"
+       x2="540"
+       y2="532"
+       class="solid"
+       id="line869"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <path
+       d="m 540,532 a 4,4 0 0 1 -4,4"
+       class="nofill"
+       id="path871"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g879"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <line
+       x1="312"
+       y1="448"
+       x2="320"
+       y2="464"
+       class="solid"
+       id="line875"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <path
+       d="m 320,464 a 32,32 0 0 0 16,16"
+       class="nofill"
+       id="path877"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g887"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <line
+       x1="80"
+       y1="480"
+       x2="88"
+       y2="496"
+       class="solid"
+       id="line881"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="88"
+       y1="496"
+       x2="96"
+       y2="496"
+       class="solid"
+       id="line883"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="104"
+       y1="480"
+       x2="96"
+       y2="496"
+       class="solid"
+       id="line885"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+  <g
+     id="g899"
+     transform="translate(6)"
+     style="mix-blend-mode:color-burn;stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill">
+    <line
+       x1="160"
+       y1="496"
+       x2="170"
+       y2="516"
+       class="solid"
+       id="line889"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <path
+       d="m 170,516 a 8,8 0 0 0 6,4"
+       class="nofill"
+       id="path891"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="176"
+       y1="520"
+       x2="184"
+       y2="520"
+       class="solid"
+       id="line893"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <line
+       x1="188"
+       y1="496"
+       x2="188"
+       y2="516"
+       class="solid"
+       id="line895"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+    <path
+       d="m 188,516 a 4,4 0 0 1 -4,4"
+       class="nofill"
+       id="path897"
+       style="stroke-dasharray:0.5,0.5;stroke-dashoffset:0;paint-order:markers stroke fill" />
+  </g>
+</svg>
