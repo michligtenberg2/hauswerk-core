@@ -19,6 +19,8 @@ from core.style import StyleManager
 from core.logger import Logger
 from widgets.plugin_generator.pluginwizard import PluginGeneratorWidget
 from widgets.pluginupload_widget_v2 import PluginUploadWidget
+from widgets.experimental import ExperimentalTab
+
 
 PLUGIN_DIR = os.path.join(os.path.dirname(__file__), "plugins")
 
@@ -95,9 +97,11 @@ class HauswerkCore(QMainWindow):
 
         self.tabs.addTab(self.dashboard, QIcon(), "🏠 Dashboard")
         self.tabs.addTab(PluginStoreGridWidget(), QIcon(), "🛍️ Store")
-        self.tabs.addTab(PluginGeneratorWidget(), QIcon(), "Generator")
         self.tabs.addTab(PluginUploadWidget(), QIcon(), "Upload")
         self.tabs.addTab(LogTab(), QIcon(), "📜 Log")
+    if SettingsManager.instance().get("experimental_features"):
+        self.tabs.addTab(ExperimentalTab(), icon("lab"), "Lab")
+        self.tabs.addTab(PluginGeneratorWidget(), QIcon(), "Generator")
 
 
         self.reload_plugins()

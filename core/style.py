@@ -11,5 +11,8 @@ class StyleManager:
             if font_size:
                 qss += f"\nQWidget {{ font-size: %dpx; }}\n" % int(font_size)
             app.setStyleSheet(qss)
+            accent = SettingsManager.instance().get("accent_color", "#44cc88")
+            qss = qss.replace("@accent", accent)
+
         else:
             app.setStyleSheet("")
