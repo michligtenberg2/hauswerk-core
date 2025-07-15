@@ -1,0 +1,16 @@
+{
+  "name": "bouw-een-pyqt6-plugi",
+  "version": "1.0",
+  "description": "Bouw een PyQt6 plugin-widget genaamd TerminalPlugin. Deze moet een ingebouwde terminal (shell) tonen binnen de GUI.\n\n- Toon een QTextEdit of QPlainTextEdit waarin de gebruiker shell-commando\u2019s kan typen.\n- Voeg een \"Voer uit\"-knop toe die het ingevoerde commando uitvoert met subprocess.\n- Toon de output (stdout en stderr) direct onder het invoerveld in een apart tekstveld.\n- Zorg dat de gebruiker meerdere regels kan uitvoeren, met gescheiden outputblokken.\n- UI in een verticale layout. Voeg eventueel scrollbare output toe.",
+  "author": "Onbekend",
+  "tags": [],
+  "verified": false,
+  "rating": 0,
+  "compatibility": [
+    "Hauswerk >=1.0"
+  ],
+  "changelog": "Gegenereerd via Plugin Wizard",
+  "preview": "preview.jpg",
+  "entry": "main.py",
+  "class": "Bouw-een-pyqt6-plugiPlugin"
+}
