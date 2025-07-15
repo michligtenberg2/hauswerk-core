@@ -1,8 +1,0 @@
-{
-  "name": "Audiofadebpm",
-  "entry": "audiofadebpm.py",
-  "class": "AudiofadebpmWidget",
-  "icon": "audiofadebpm.svg",
-  "tags": [],
-  "verified": true
-}
