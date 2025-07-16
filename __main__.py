@@ -17,8 +17,8 @@ from core.show_splash import show_splash
 from core.settings import SettingsManager
 from core.style import StyleManager
 from core.logger import Logger
-from widgets.plugin_generator.pluginwizard import PluginGeneratorWidget
-from widgets.pluginupload_widget_v2 import PluginUploadWidget
+from widgets.hpb import PluginGeneratorWidget
+from widgets.hpb import PluginUploadTab
 from widgets.experimental import ExperimentalTab
 
 
@@ -97,7 +97,7 @@ class HauswerkCore(QMainWindow):
 
         self.tabs.addTab(self.dashboard, QIcon(), "🏠 Dashboard")
         self.tabs.addTab(PluginStoreGridWidget(), QIcon(), "🛍️ Store")
-        self.tabs.addTab(PluginUploadWidget(), QIcon(), "Upload")
+        self.tabs.addTab(PluginUploadTab(), QIcon(), "Upload")
         self.tabs.addTab(LogTab(), QIcon(), "📜 Log")
     if SettingsManager.instance().get("experimental_features"):
         self.tabs.addTab(ExperimentalTab(), icon("lab"), "Lab")
