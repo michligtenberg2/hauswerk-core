@@ -1,4 +1,6 @@
 class Logger:
+    """Simple GUI logger that buffers messages until a widget is attached."""
+
     _log_widget = None
     _buffer = []
     _enabled = True

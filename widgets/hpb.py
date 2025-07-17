@@ -11,6 +11,7 @@ import requests
 from pathlib import Path
 import tempfile
 import shutil
+from core.utils import slugify
 
 SUPABASE_URL = "https://izlcnpelomuuwxijnnuh.supabase.co"
 SUPABASE_KEY = os.environ.get("SUPABASE_KEY")
@@ -141,7 +142,7 @@ class PluginUploadTab(QWidget):
             QMessageBox.warning(self, "Invoer ontbreekt", "Naam en beschrijving zijn verplicht.")
             return
 
-        slug = name.lower().replace(" ", "-")
+        slug = slugify(name)
         if slug in self.existing_slugs:
             QMessageBox.warning(self, "Bestaat al", f"De plugin '{slug}' bestaat al in de index.")
             return

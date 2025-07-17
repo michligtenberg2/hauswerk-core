@@ -3,7 +3,7 @@ import json
 from PyQt6.QtCore import QObject, pyqtSignal
 from PyQt6.QtWidgets import (
     QDialog, QVBoxLayout, QHBoxLayout, QLabel, QLineEdit, QComboBox, QSpinBox,
-    QPushButton, QDialogButtonBox, QFileDialog, QApplication
+    QPushButton, QDialogButtonBox, QFileDialog, QApplication, QCheckBox
 )
 
 class SettingsManager(QObject):
@@ -18,7 +18,9 @@ class SettingsManager(QObject):
             "theme": "light",
             "max_layers": 6,
             "presets_dir": os.path.expanduser("~/.megatool_presets"),
-            "font_size": 12
+            "font_size": 12,
+            "accent_color": "#44cc88",
+            "compact_mode": False
         }
         self.load()
 
@@ -105,6 +107,13 @@ class SettingsDialog(QDialog):
         hlayout2b.addWidget(self.fontsize_spin)
         layout.addLayout(hlayout2b)
 
+        # Accentkleur
+        hlayout_color = QHBoxLayout()
+        hlayout_color.addWidget(QLabel("Accentkleur:"))
+        self.accent_edit = QLineEdit()
+        hlayout_color.addWidget(self.accent_edit)
+        layout.addLayout(hlayout_color)
+
         # Max collage-lagen
         hlayout3 = QHBoxLayout()
         hlayout3.addWidget(QLabel("Max. collage-lagen:"))
@@ -123,6 +132,9 @@ class SettingsDialog(QDialog):
         hlayout4.addWidget(browse_btn2)
         layout.addLayout(hlayout4)
 
+        self.compact_check = QCheckBox("Compacte layout")
+        layout.addWidget(self.compact_check)
+
         self.buttons = QDialogButtonBox(QDialogButtonBox.StandardButton.Ok | QDialogButtonBox.StandardButton.Cancel)
         self.buttons.accepted.connect(self.accept)
         self.buttons.rejected.connect(self.reject)
@@ -134,6 +146,7 @@ class SettingsDialog(QDialog):
         # Live preview op wissel thema of fontgrootte
         self.theme_combo.currentTextChanged.connect(self._preview_theme)
         self.fontsize_spin.valueChanged.connect(self._preview_theme)
+        self.accent_edit.textChanged.connect(self._preview_theme)
 
     def _browse_folder(self):
         folder = QFileDialog.getExistingDirectory(self, "Kies outputmap")
@@ -157,13 +170,16 @@ class SettingsDialog(QDialog):
         self.fontsize_spin.setValue(int(s.get("font_size", 12)))
         self.max_layers_spin.setValue(int(s.get("max_layers", 6)))
         self.presets_dir_edit.setText(s.get("presets_dir", os.path.expanduser("~/.megatool_presets")))
+        self.accent_edit.setText(s.get("accent_color", "#44cc88"))
+        self.compact_check.setChecked(bool(s.get("compact_mode", False)))
 
     def _preview_theme(self):
         theme = self.theme_combo.currentText()
         font_size = self.fontsize_spin.value()
+        accent = self.accent_edit.text()
         app = QApplication.instance()
         from core.style import StyleManager
-        StyleManager.apply_theme(app, theme, font_size)
+        StyleManager.apply_theme(app, theme, font_size, accent)
 
     def accept(self):
         self.settings.set("output_dir", self.outdir_edit.text())
@@ -171,4 +187,6 @@ class SettingsDialog(QDialog):
         self.settings.set("max_layers", self.max_layers_spin.value())
         self.settings.set("presets_dir", self.presets_dir_edit.text())
         self.settings.set("font_size", self.fontsize_spin.value())
+        self.settings.set("accent_color", self.accent_edit.text())
+        self.settings.set("compact_mode", self.compact_check.isChecked())
         super().accept()

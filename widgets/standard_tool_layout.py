@@ -1,5 +1,11 @@
 # widgets/standard_tool_layout.py
 
+"""Reusable container for tool plugins.
+
+This widget arranges common rows like input/output selectors, option
+controls, action buttons and log widgets in a consistent vertical layout.
+"""
+
 from PyQt6.QtWidgets import QWidget, QVBoxLayout, QHBoxLayout
 
 class StandardToolLayout(QWidget):

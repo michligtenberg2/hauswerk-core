@@ -4,11 +4,11 @@ import json
 import os
 import zipfile
 import re
+from core.utils import slugify
 
 def generate_slug(text):
-    base = "".join(c for c in text.lower() if c.isalnum() or c in " -_")
-    base = re.sub(r'[^a-z0-9_-]', '', base.strip())
-    return "-".join(base.split())[:20] or "plugin"
+    """Backward compatible wrapper around :func:`slugify`."""
+    return slugify(text)
 
 def write_metadata_file(plugin_dir: Path, slug: str, classname: str, metadata: dict, log_func):
     metadata.update({

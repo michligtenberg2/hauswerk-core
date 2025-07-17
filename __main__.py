@@ -193,6 +193,8 @@ class HauswerkCore(QMainWindow):
 if __name__ == "__main__":
     Logger.log("🚀 Start Hauswerk applicatie")
     app = QApplication([])
+    s = SettingsManager.instance()
+    StyleManager.apply_theme(app, s.get("theme", "light"), s.get("font_size", 12), s.get("accent_color", "#44cc88"))
     window = HauswerkCore()
     window.show()
     app.exec()

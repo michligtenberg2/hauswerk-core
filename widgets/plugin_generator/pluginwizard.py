@@ -17,6 +17,7 @@ import zipfile
 from core.settings import SettingsManager
 from .plugin_template_fallback import generate_fallback_main_py
 from .ollama_integration import is_ollama_installed, run_ollama_prompt
+from core.utils import slugify
 
 class MetadataFields(QGroupBox):
     def __init__(self):
@@ -133,7 +134,7 @@ class PluginGeneratorWidget(QWidget):
             return
 
         full_prompt = f"Template: {template}. {prompt}"
-        slug = self._generate_slug(prompt)
+        slug = slugify(prompt)
         if not slug:
             QMessageBox.warning(self, "Fout", "Slug kon niet worden gegenereerd.")
             return
@@ -215,6 +216,5 @@ class PluginGeneratorWidget(QWidget):
         dlg.exec()
 
     def _generate_slug(self, text):
-        base = "".join(c for c in text.lower() if c.isalnum() or c in " -_")
-        base = re.sub(r'[^a-z0-9_-]', '', base.strip())
-        return "-".join(base.split())[:20]
+        """Deprecated helper kept for backward compatibility."""
+        return slugify(text)
