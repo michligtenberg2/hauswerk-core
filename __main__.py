@@ -104,12 +104,16 @@ class HauswerkCore(QMainWindow):
             self.tabs.addTab(ExperimentalTab(), QIcon(LAB_ICON_PATH), "Lab")
             self.tabs.addTab(PluginGeneratorWidget(), QIcon(), "Generator")
 
+        # 🔢 Bepaal hoeveel vaste tabs er initieel zijn
+        self.initial_tab_count = self.tabs.count()
+
         self.reload_plugins()
 
     def reload_plugins(self):
         Logger.log("♻️ Plugins worden opnieuw geladen")
-        while self.tabs.count() > 3:
-            self.tabs.removeTab(3)
+        # Verwijder alleen dynamisch toegevoegde plugintabs
+        while self.tabs.count() > self.initial_tab_count:
+            self.tabs.removeTab(self.initial_tab_count)
 
         if not os.path.exists(PLUGIN_DIR):
             Logger.log(f"📁 Pluginmap ontbreekt, aanmaken: {PLUGIN_DIR}")
@@ -139,7 +143,7 @@ class HauswerkCore(QMainWindow):
 
     def show_tab_context_menu(self, pos: QPoint):
         index = self.tabs.tabBar().tabAt(pos)
-        if index < 3:
+        if index < self.initial_tab_count:
             return
         plugin_name = self.tabs.tabText(index)
         menu = QMenu()
