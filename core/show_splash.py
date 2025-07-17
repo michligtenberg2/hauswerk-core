@@ -8,11 +8,13 @@ import os
 def show_splash(theme="light", parent_window=None, duration=1500):
     splash = None
     base_path = os.path.dirname(__file__)
-    res_path = os.path.join(base_path, "resources")
+    # search for resources one directory up from the core package
+    res_path = os.path.normpath(os.path.join(base_path, "..", "resources"))
 
     svg_path = os.path.join(res_path, f"splash_{theme}.svg")
     if not os.path.exists(svg_path):
-        svg_path = os.path.join(res_path, "logo-hauswerk.svg")
+        # fall back to the generic logo
+        svg_path = os.path.join(res_path, "logo.svg")
     if not os.path.exists(svg_path):
         svg_path = None
 
@@ -26,7 +28,8 @@ def show_splash(theme="light", parent_window=None, duration=1500):
     else:
         png_path = os.path.join(res_path, f"splash_{theme}.png")
         if not os.path.exists(png_path):
-            png_path = os.path.join(res_path, "logo-hauswerk.png")
+            # fall back to the generic logo
+            png_path = os.path.join(res_path, "logo.png")
         if os.path.exists(png_path):
             splash_pix = QPixmap(png_path).scaledToWidth(500, Qt.TransformationMode.SmoothTransformation)
         else:
