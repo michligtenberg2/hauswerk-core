@@ -26,16 +26,35 @@ PLUGIN_DIR = os.path.join(os.path.dirname(__file__), "plugins")
 LAB_ICON_PATH = os.path.join(os.path.dirname(__file__), "resources", "icons", "magic.svg")
 
 def load_plugin(path):
+    Logger.log(f"🔄 Plugin wordt geladen vanaf: {path}")
+
+    metadata_path = os.path.join(path, "metadata.json")
+    if not os.path.isfile(metadata_path):
+        Logger.log(f"⚠️ 'metadata.json' ontbreekt in {path}, plugin wordt overgeslagen")
+        return None
+
     try:
-        Logger.log(f"🔄 Plugin wordt geladen vanaf: {path}")
-        with open(os.path.join(path, "metadata.json")) as f:
+        with open(metadata_path) as f:
             meta = json.load(f)
-        entry_path = os.path.join(path, meta["entry"])
-        class_name = meta["class"]
+    except Exception as e:
+        Logger.log(f"⚠️ Kan metadata.json niet lezen in {path}: {e}")
+        return None
+
+    required = {"name", "entry", "class"}
+    if not required.issubset(meta):
+        Logger.log(f"⚠️ metadata.json mist vereiste velden in {path}, plugin wordt overgeslagen")
+        return None
+
+    entry_path = os.path.join(path, meta["entry"])
+    if not os.path.isfile(entry_path):
+        Logger.log(f"⚠️ Entry-bestand '{entry_path}' ontbreekt, plugin wordt overgeslagen")
+        return None
+
+    try:
         spec = importlib.util.spec_from_file_location(meta["name"], entry_path)
         module = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(module)
-        plugin_class = getattr(module, class_name)
+        plugin_class = getattr(module, meta["class"])
         icon_path = os.path.join(path, meta.get("icon", ""))
         icon = QIcon(icon_path) if os.path.exists(icon_path) else QIcon()
         Logger.log(f"✅ Plugin '{meta['name']}' geladen")
