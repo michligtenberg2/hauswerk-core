@@ -1,11 +1,14 @@
 
+"""Utility to display a fading splash screen."""
+
 from PyQt6.QtCore import QTimer, QPropertyAnimation, QEasingCurve, Qt
-from PyQt6.QtGui import QPixmap
+from PyQt6.QtGui import QPixmap, QPainter
 from PyQt6.QtSvg import QSvgRenderer
 from PyQt6.QtWidgets import QApplication, QSplashScreen
 import os
 
-def show_splash(theme="light", parent_window=None, duration=1500):
+def show_splash(theme: str = "light", parent_window=None, duration: int = 1500):
+    """Display the Hauswerk splash screen with fade in/out animations."""
     splash = None
     base_path = os.path.dirname(__file__)
     # search for resources one directory up from the core package
@@ -22,8 +25,9 @@ def show_splash(theme="light", parent_window=None, duration=1500):
         renderer = QSvgRenderer(svg_path)
         pixmap = QPixmap(500, 300)
         pixmap.fill(Qt.GlobalColor.transparent)
-        painter = QPixmap(pixmap)
+        painter = QPainter(pixmap)
         renderer.render(painter)
+        painter.end()
         splash_pix = pixmap
     else:
         png_path = os.path.join(res_path, f"splash_{theme}.png")
