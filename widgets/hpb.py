@@ -13,7 +13,7 @@ import tempfile
 import shutil
 
 SUPABASE_URL = "https://izlcnpelomuuwxijnnuh.supabase.co"
-SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml6bGNucGVsb211dXd4aWpubnVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTI1ODQ0NjEsImV4cCI6MjA2ODE2MDQ2MX0.ogKWbIDvRlq5BDyyVX9WNWdHYPYuSFm1dugP8_0u7fE"
+SUPABASE_KEY = os.environ.get("SUPABASE_KEY")
 BUCKET = "hauswerk.unofficial"
 DEFAULT_ICON = Path(__file__).parent / "default_icon.png"
 
@@ -144,6 +144,14 @@ class PluginUploadTab(QWidget):
         slug = name.lower().replace(" ", "-")
         if slug in self.existing_slugs:
             QMessageBox.warning(self, "Bestaat al", f"De plugin '{slug}' bestaat al in de index.")
+            return
+
+        if not SUPABASE_KEY:
+            QMessageBox.warning(
+                self,
+                "SUPABASE_KEY ontbreekt",
+                "Zet de omgevingsvariabele SUPABASE_KEY voordat je kunt uploaden."
+            )
             return
 
         if self.selected_py:
