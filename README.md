@@ -22,6 +22,8 @@
 ```bash
 pip install -r requirements.txt
 ```
+- Zet `SUPABASE_KEY` als omgevingvariabele wanneer je plugins wilt uploaden
+  naar de store.
 
 ---
 
