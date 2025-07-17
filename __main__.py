@@ -12,7 +12,7 @@ from PyQt6.QtCore import Qt, QPoint
 
 from widgets.pluginstoregrid import PluginStoreGridWidget
 from widgets.dashboard import DashboardTab
-from widgets.logtab import LogTab
+from core.log_tab import LogTab
 from core.show_splash import show_splash
 from core.settings import SettingsManager
 from core.style import StyleManager
@@ -23,6 +23,7 @@ from widgets.experimental import ExperimentalTab
 
 
 PLUGIN_DIR = os.path.join(os.path.dirname(__file__), "plugins")
+LAB_ICON_PATH = os.path.join(os.path.dirname(__file__), "resources", "icons", "magic.svg")
 
 def load_plugin(path):
     try:
@@ -99,10 +100,9 @@ class HauswerkCore(QMainWindow):
         self.tabs.addTab(PluginStoreGridWidget(), QIcon(), "🛍️ Store")
         self.tabs.addTab(PluginUploadTab(), QIcon(), "Upload")
         self.tabs.addTab(LogTab(), QIcon(), "📜 Log")
-    if SettingsManager.instance().get("experimental_features"):
-        self.tabs.addTab(ExperimentalTab(), icon("lab"), "Lab")
-        self.tabs.addTab(PluginGeneratorWidget(), QIcon(), "Generator")
-
+        if SettingsManager.instance().get("experimental_features"):
+            self.tabs.addTab(ExperimentalTab(), QIcon(LAB_ICON_PATH), "Lab")
+            self.tabs.addTab(PluginGeneratorWidget(), QIcon(), "Generator")
 
         self.reload_plugins()
 
