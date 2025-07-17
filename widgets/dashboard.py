@@ -68,12 +68,13 @@ class DashboardTab(QWidget):
         layout.addStretch()
 
     def open_plugin_folder(self):
-        os.system(f'xdg-open "{os.path.abspath(os.path.join(os.path.dirname(__file__), "../plugins"))}"')
+        path = os.path.abspath(os.path.join(os.path.dirname(__file__), "../plugins"))
+        QDesktopServices.openUrl(QUrl.fromLocalFile(path))
 
     def open_changelog(self):
         changelog_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "../CHANGELOG.md"))
         if os.path.exists(changelog_path):
-            os.system(f'xdg-open "{changelog_path}"')
+            QDesktopServices.openUrl(QUrl.fromLocalFile(changelog_path))
         else:
             QMessageBox.information(self, "Changelog niet gevonden", "Het changelog-bestand kon niet worden gevonden.")
 
