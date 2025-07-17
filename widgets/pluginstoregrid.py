@@ -69,7 +69,7 @@ class PluginStoreGridWidget(QWidget):
         filtered = []
         for plugin in self.all_plugins:
             name_match = term in plugin['name'].lower()
-            tag_match = selected_tag == "Alle tags"
+            tag_match = selected_tag == "Alle tags" or selected_tag in plugin.get("tags", [])
             if name_match and tag_match:
                 filtered.append(plugin)
 
